@@ -20,3 +20,65 @@
     --mainRed: #db2777;
     --bodyColor: #f6f6f6;
 }
+
+body {
+    font-family: "iranSans";
+    background-color: var(--bodyColor);
+    color: var(--mainBlack);
+    position: relative;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondaryColor);
+    height: 170px;
+    padding-bottom: 1rem;
+    position: sticky;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.search {
+    width: 20rem;
+    border: none;
+    outline: none;
+    /* font-size: 1rem; */
+    font-weight: bold;
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    color: var(--mainBlack);
+    margin-bottom: 1rem;
+}
+
+.search:focus {
+    border: 1px solid var(--primaryColor);
+}
+
+.filter-box {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    color: var(--primaryColor);
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid var(--primaryColor);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--primaryColor);
+    color: var(--mainWhite);
+}
